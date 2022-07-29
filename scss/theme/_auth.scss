@@ -1,0 +1,175 @@
+
+.auth-section {
+	height: 100%;
+	min-height: 100%;
+}
+
+.auth-col-main {
+	min-height: 100vh;
+}
+
+.auth-col-promo {
+	overflow:hidden;
+}
+
+.auth-user-figure-holder {
+	background-image: url("../images/user-figure.png");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: auto 500px;
+	min-height: 500px;
+	border-bottom: 1px solid $theme-divider;
+}
+
+.auth-quote-box {
+	position:relative;
+	max-width: 380px;
+	&:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: -16px;
+		left: 50%;
+		margin-left: -16px;
+		border-left: 16px solid transparent;
+		border-right: 16px solid transparent;
+		border-top: 16px solid #fff;
+		
+	}
+}
+
+.auth-heading {
+	font-size: 1.5rem;
+}
+
+.auth-wrapper {
+	max-width: 460px;
+	 .login-section & {
+		 max-width: 600px;
+	 }
+}
+
+.social-auth {
+	max-width: 300px;
+}
+
+.form-control {
+    @include placeholder($theme-text-color-light); 
+}
+
+a.btn-social, .btn-social {
+    background: $theme-color-primary;
+    border: none;
+    color: #fff;
+    padding: 0.65rem 1rem;
+    font-weight: normal;
+    text-align: left;
+    &:hover, &:active, &:focus {
+        background: darken($theme-color-primary, 5%);
+        border: none;
+        color: #fff;
+        outline: none;
+    }
+    .icon-holder {
+        padding-right: 0.5rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        text-align: left;
+    }
+    .btn-text {
+        padding-left: 1rem;
+        display: inline-block;
+    }
+}
+
+a.btn-google, .btn-google {
+    background: $google-color;
+    &:hover, &:active, &:focus {
+        background: darken($google-color, 5%);
+    }
+}
+
+a.btn-facebook, .btn-facebook {
+    background: $facebook-color;
+    &:hover, &:active, &:focus {
+        background: darken($facebook-color, 5%);
+    }
+}
+
+a.btn-twitter, .btn-twitter {
+    background: $twitter-color;
+    &:hover, &:active, &:focus {
+        background: darken($twitter-color, 5%);
+    }
+}
+
+
+.legal-note {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: $theme-text-color-light;
+}
+    
+
+.divider {
+    border-bottom: 1px solid $theme-divider;
+    position: relative;
+}
+.or-text {
+    position: absolute;
+    top: -12px;
+    padding: 0 10px;
+    background: #fff;
+    display: inline-block;
+    left: 50%;
+    margin-left: -22px;  
+    color: $theme-text-color-light;
+}
+
+.remember {
+   color: $theme-text-color-light; 
+   font-size: 14px;
+}
+.form-check {
+   font-size: 14px;
+}
+.forgotten-password {
+    text-align:right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    a {
+        color: $theme-text-color-light;
+    }
+}
+.option-container {
+    border-top: 1px solid $theme-divider;
+}
+
+.btn[type="submit"] {
+	min-width: 300px;
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .no-bg-xs {
+	    background: none;
+    }
+    .login-section .auth-wrapper {
+		box-shadow: none !important;
+	}
+	.password-section .auth-wrapper {
+		box-shadow: none !important;
+	}
+	
+	.btn[type="submit"] {
+		min-width: inherit;
+		width: 100%;
+	}
+}
+
+
