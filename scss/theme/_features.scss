@@ -3,13 +3,14 @@
 	
 }
 .feature-intro-figure-holder {
-	height: 480px;
-	background: 
-	    url("../images/feature-figure-intro-main.png") no-repeat center top, 
-	    url("../images/feature-figure-intro-l.png") no-repeat 25% 5rem,
-        url("../images/feature-figure-intro-r.png") no-repeat 75% 5rem;
-	    
-	background-size: 360px auto;
+	height: 360px;
+	//background:
+	//    url("../images/feature-figure-intro-main.png") no-repeat center top,
+	//    url("../images/feature-figure-intro-l.png") no-repeat 25% 5rem,
+  //      url("../images/feature-figure-intro-r.png") no-repeat 75% 5rem;
+	background:
+			url("../images/philosophy/betterment-hero.webp") no-repeat center top;
+	background-size: 640px auto;
 	border-bottom: 1px solid $theme-border-color;
 }
 
@@ -19,7 +20,8 @@
 	height: 60px;
 	background: rgba(0, 0, 0, 0.4);
 	@include border-radius(50%);
-	padding-top: 15px;
+	padding-top: 16px;
+	padding-left: 5px;
 	cursor: pointer;
 	&:hover {
 		background: rgba(0, 0, 0, 0.6);
@@ -36,16 +38,16 @@
     
 	
 	.feature-item-1 & {
-		background: url("../images/feature-figure-1.png") no-repeat center top;
+		background: url("../images/philosophy/wealthsimple0.png") no-repeat center bottom;
 		background-size: 360px auto;
 	}
 	
 	.feature-item-2 & {
-		background: url("../images/feature-figure-2.png") no-repeat center top;
+		background: url("../images/philosophy/wealthsimple1.png") no-repeat center top;
 		background-size: 360px auto;
 	}
 	.feature-item-3 & {
-		background: url("../images/feature-figure-3.png") no-repeat center top;
+		background: url("../images/philosophy/wealthsimple2.png") no-repeat center top;
 		background-size: 360px auto;
 	}
 }
