@@ -50,6 +50,22 @@
 		background: url("../images/philosophy/wealthsimple2.png") no-repeat center top;
 		background-size: 360px auto;
 	}
+
+	.feature-item-4 & {
+		background: url("../images/philosophy/compounding.jpg") no-repeat center;
+		background-size: 360px auto;
+	}
+
+	.feature-item-5 & {
+		background: url("../images/philosophy/diversify.png") no-repeat center 50px;
+		background-size: 485px auto;
+	}
+
+	.feature-item-6 & {
+		background: url("../images/philosophy/triangle.png") no-repeat center top;
+		background-size: 415px auto;
+		min-height: 360px;
+	}
 }
 
 .feature-quote-profile {
