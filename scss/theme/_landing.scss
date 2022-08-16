@@ -9,9 +9,9 @@
 .hero-section {
 
 	.figure-holder {
-		background: url("../images/longrun/bogle_transparent.png") no-repeat right center;
-		background-size: 480px auto;
-		min-height: 600px;
+		background: url("../images/longrun/bogle_transparent.png") no-repeat right bottom;
+		background-size: 720px auto;
+		min-height: 500px;
 	}
 	
 	.app-stores {
@@ -132,8 +132,8 @@
 		
 		.figure-holder {
 			min-height: 460px;
-			background-position: right 0px;
-			background-size: 360px auto;
+			background-position: right bottom;
+			background-size: 550px auto;
 		}
 	}
 
@@ -146,9 +146,9 @@
 		text-align: center;
 		
 		.figure-holder {
-			padding-bottom: 400px;
-			background-position: center 400px;
-			background-size: 300px auto;
+			padding-bottom: 225px;
+			background-position: center 340px;
+			background-size: 400px auto;
 		}
 	}
 
@@ -168,9 +168,9 @@
 		text-align: center;
 		
 		.figure-holder {
-			padding-bottom: 400px;
-			background-position: center 420px;
-			background-size: 300px auto;
+			padding-bottom: 240px;
+			background-position: center 360px;
+			background-size: 430px auto;
 		}
 	}
 	.logos-row {

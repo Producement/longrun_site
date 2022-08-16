@@ -9,8 +9,8 @@
 	//    url("../images/feature-figure-intro-l.png") no-repeat 25% 5rem,
   //      url("../images/feature-figure-intro-r.png") no-repeat 75% 5rem;
 	background:
-			url("../images/philosophy/betterment-hero.webp") no-repeat center top;
-	background-size: 640px auto;
+			url("../images/philosophy/robbins.png") no-repeat center top;
+	background-size: 320px auto;
 	border-bottom: 1px solid $theme-border-color;
 }
 
@@ -38,17 +38,17 @@
     
 	
 	.feature-item-1 & {
-		background: url("../images/philosophy/wealthsimple0.png") no-repeat center bottom;
-		background-size: 360px auto;
+		background: url("../images/philosophy/ib_phone.png") no-repeat center;
+		background-size: 240px auto;
 	}
 	
 	.feature-item-2 & {
-		background: url("../images/philosophy/wealthsimple1.png") no-repeat center top;
-		background-size: 360px auto;
+		background: url("../images/philosophy/ib_phone2.png") no-repeat center;
+		background-size: 280px auto;
 	}
 	.feature-item-3 & {
-		background: url("../images/philosophy/wealthsimple2.png") no-repeat center top;
-		background-size: 360px auto;
+		background: url("../images/philosophy/ib_phone3.png") no-repeat center;
+		background-size: 480px auto;
 	}
 
 	.feature-item-4 & {
@@ -62,7 +62,7 @@
 	}
 
 	.feature-item-6 & {
-		background: url("../images/philosophy/triangle.png") no-repeat center top;
+		background: url("../images/philosophy/triangle.png") no-repeat center;
 		background-size: 415px auto;
 		min-height: 360px;
 	}
