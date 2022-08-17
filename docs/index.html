@@ -1,15 +1,6 @@
 ---
 # front matter tells Jekyll to process Liquid
 ---
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-
-{% include head.html %}
-
-<body>
-
-{% include header.html %}
-
 <section class="hero-section">
   <div class="container">
     <div class="row figure-holder">
@@ -408,33 +399,6 @@
 
 </section><!--//testimonial-section-->
 
-{% include footer.html %}
-
-<!-- Javascript -->
-<script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
-<!-- Page Specific JS -->
-<script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="assets/js/flickity-custom.js"></script>
-
-<script>
-  (function (d, t) {
-    const BASE_URL = "https://chatwoot.longrun.app";
-    const g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    g.src = BASE_URL + "/packs/js/sdk.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g, s);
-    g.onload = function () {
-      window.chatwootSDK.run({
-        websiteToken: 'DseaUreTwubg3b3P4Wx8jANY',
-        baseUrl: BASE_URL
-      })
-    }
-  })(document, "script");
-</script>
-
 <script>
     const emailForm = document.querySelector('#email-form');
     emailForm.addEventListener('submit', function (event) {
@@ -447,6 +411,3 @@
         emailForm.reset();
     });
 </script>
-
-</body>
-</html>

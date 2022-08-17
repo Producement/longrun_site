@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <title>{{page.title}}</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Longrun">
+    <meta name="author" content="Producement">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700"
+          rel="stylesheet">
+
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+
+<body>
+
+{% include header.html %}
+
+{{content}}
+
+{% include footer.html %}
+
+<!-- Javascript -->
+<script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Page Specific JS -->
+<script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/js/flickity-custom.js"></script>
+
+<script>
+    (function (d, t) {
+        const BASE_URL = "https://chatwoot.longrun.app";
+        const g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+            window.chatwootSDK.run({
+                websiteToken: 'DseaUreTwubg3b3P4Wx8jANY',
+                baseUrl: BASE_URL
+            })
+        }
+    })(document, "script");
+</script>
+
+</body>
+</html>
