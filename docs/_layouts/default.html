@@ -52,9 +52,13 @@
         g.async = true;
         s.parentNode.insertBefore(g, s);
         g.onload = function () {
+            window.chatwootSettings = {
+                type: "expanded_bubble",
+                launcherTitle: "Need help?",
+            };
             window.chatwootSDK.run({
                 websiteToken: 'DseaUreTwubg3b3P4Wx8jANY',
-                baseUrl: BASE_URL
+                baseUrl: BASE_URL,
             })
         }
     })(document, "script");
