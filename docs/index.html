@@ -248,7 +248,7 @@
             <div class="form-group">
                 <div class="row justify-content-center mb-2">
                     <div class="col-3">
-                        <input type="email" class="form-control" id="exampleInputEmail1"
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="entry.416778491"
                                aria-describedby="emailHelp" placeholder="Enter your email">
                     </div>
                 </div>
@@ -267,6 +267,7 @@
     const emailForm = document.querySelector('#email-form');
     emailForm.addEventListener('submit', function (event) {
         event.preventDefault();
+        debugger;
         fetch(this.getAttribute('action'), {
             method: this.getAttribute('method'),
             headers: {'Content-Type': 'application/json'},
