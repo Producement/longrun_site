@@ -1,0 +1,39 @@
+<section id="start" class="cta-section py-5 theme-bg-secondary text-center">
+    <div class="container">
+        <h3 class="text-white font-weight-bold mb-3">Ready to start?</h3>
+        <h3 class="text-white font-weight-bold mb-3">To get directions for an Interactive Brokers
+            account creation we only need your email.</h3>
+        <form id="email-form" method="post"
+              action="https://restful-google-form.vercel.app/api/forms/1FAIpQLSeHkZ7Z1W_7ltuaFllLKl7OWrX7HwCA7UZERWfMi7cVyJTYwA">
+            <div class="form-group">
+                <div class="row justify-content-center mb-2">
+                    <div class="col-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="entry.416778491"
+                               aria-describedby="emailHelp" placeholder="Enter your email">
+                    </div>
+                </div>
+                <small id="emailHelp" class="text-white mx-auto single-col-max-width">We'll never
+                    share your email with anyone else.</small>
+            </div>
+            <button type="submit" class="btn theme-btn theme-btn-ghost theme-btn-on-bg mt-4">Get
+                directions
+            </button>
+        </form>
+
+    </div>
+</section><!--//cta-section-->
+
+<script>
+    const emailForm = document.querySelector('#email-form');
+    emailForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        debugger;
+        fetch(this.getAttribute('action'), {
+            method: this.getAttribute('method'),
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(Object.fromEntries(new FormData(this)))
+        });
+        emailForm.reset();
+        window.open('https://longrun.app/directions');
+    });
+</script>
