@@ -49,28 +49,6 @@
 <script type="text/javascript" src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="assets/js/flickity-custom.js"></script>
 
-<script>
-    (function (d, t) {
-        const BASE_URL = "https://chatwoot.longrun.app";
-        const g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        g.src = BASE_URL + "/packs/js/sdk.js";
-        g.defer = true;
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
-        g.onload = function () {
-            window.chatwootSettings = {
-                type: "expanded_bubble",
-                launcherTitle: "Need help?",
-            };
-            window.chatwootSDK.run({
-                websiteToken: 'DseaUreTwubg3b3P4Wx8jANY',
-                baseUrl: BASE_URL,
-            })
-        }
-    })(document, "script");
-
-</script>
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-19J9P9N78T"></script>
 <script>
